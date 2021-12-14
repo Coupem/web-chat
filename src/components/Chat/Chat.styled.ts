@@ -5,7 +5,6 @@ export const ChatStyles = styled.div`
   max-width: 1200px;
   margin: auto;
   background-color: #0b0312;
-  padding-bottom: 30px;
   max-height: 100vh;
   overflow: auto;
 `;

@@ -5,6 +5,8 @@ export const SendMessageStyles = styled.div`
   max-width: 800px;
   background-color: #241c2b;
   border-radius: 10px;
+  position: relative;
+  bottom: 10px;
 
   .sendMessageWrapper {
     padding: 10px 20px;
