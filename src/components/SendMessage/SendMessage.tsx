@@ -15,14 +15,14 @@ const SendMassage = ({ handleOpenModal }: ISendMessageProps) => {
   const [message, setMessage] = useState<string>('');
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setMessage(e.target.value.trim());
+    setMessage(e.target.value);
   };
 
   const sendMessage = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (message === '') return;
 
-    sendToFirebase(message, null);
+    sendToFirebase(message.trim(), null);
 
     setMessage('');
   };
